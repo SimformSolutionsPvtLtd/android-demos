@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">ConstraintLayoutDemo</string>
+    <string name="settings_label">Setting</string>
+    <string name="search_label">Search</string>
+    <string name="back_desc">back</string>
+    <string name="search_desc">search</string>
+    <string name="banner">banner</string>
+    <string name="app_name_label">Orbita AI</string>
+    <string name="app_company">Idlers</string>
+    <string name="app_size">33 MB</string>
+    <string name="app_number">3+</string>
+    <string name="btn_label">Install</string>
+    <string name="ads_info">Contains ads and In-app purchase</string>
+    <string name="app_desc">Can you outfox Orbita AI? Solve mobile puzzles-without touching the screen!</string>
+    <string name="read_more">Read More</string>
+    <string name="read_less">Read Less</string>
+    <string name="rating_number">4.6</string>
+    <string name="show_more">Show more</string>
+    <string name="show_less">Show Less</string>
+    <string name="wishlist_label">Wishlist</string>
+    <string name="share_label">Share</string>
+    <string name="total_reviews">73,088</string>
+    <string name="rate_this">Rate this app</string>
+    <string name="btn_submit">Submit</string>
+    <string name="puzzle_label">Puzzle</string>
+    <string name="app_logo">app_icon</string>
+    <string name="rating_icon">rating icon</string>
+    <string name="rating_label">Rating</string>
+    <string name="puzzle_icon">Puzzle</string>
+    <string name="scr_shot">Screenshot</string>
+    <string name="wishlist_icon">wishlist</string>
+    <string name="rating_stars">rating stars</string>
+    <string name="view">divider</string>
+    <string name="person_icon">person</string>
+    <string name="rating_star">rating_star</string>
+    <string name="avatar">avatar</string>
+    <string name="user_name">Barry Allen</string>
+    <string name="user_comment">Honestly I\'ve had a ton of fun with this game. Some puzzles seen simple but still throw me off for a while.</string>
+    <string name="user_name2">Mary Winchester</string>
+    <string name="user_comment2">The game is just awesome. It is very addictive and puzzles are really mind blowing.</string>
+    <string name="review_avatar">review avatar</string>
+    <string name="like_btn">like</string>
+    <string name="rated_text">You rated this app</string>
+    <string name="desc_full">Can you outfox Orbita AI? Solve mobile puzzles-without touching the screen!\n\nOrbita AI features 40 challenges that will have you scratching your head. If you\’re stumped, you can buy coins or use those obtained through gameplay to get a hint from your witty robot host.</string>
+    <string name="downloading_text">Downloading...</string>
+    <string name="downloads_label">Downloads</string>
+    <string name="similar_label">Similar</string>
+    <string name="cancelInstallation">Cancel Installation</string>
+    <string name="user_like">User Like</string>
+    <string name="app_banner">App Banner</string>
+    <string name="strRemovedFromWishlist">Removed from wishlist</string>
+    <string name="strAddedToWishlist">Added to wishlist</string>
+
+    <string-array name="rating_texts">
+        <item>Hated it</item>
+        <item>Disliked it</item>
+        <item>It\'s OK</item>
+        <item>Liked it</item>
+        <item>Loved it</item>
+    </string-array>
+</resources>
