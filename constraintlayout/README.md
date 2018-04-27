@@ -11,4 +11,4 @@ Screenshots:
 
 <!-- ![screenshot 1](screenshots/screenshot_1.png?raw=true "screenshot 1")
 
-![screenshot 2](screenshots/screenshot_2.png?raw=true "screenshot 2") -->
+![screenshot 2](screenshots/scree``nshot_2.png?raw=true "screenshot 2") -->
