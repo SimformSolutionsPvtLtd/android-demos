@@ -1,1 +1,1 @@
-include ':app', ':constraintlayout'
+include ':app', ':constraintlayout', ':circular_reveal_effect'

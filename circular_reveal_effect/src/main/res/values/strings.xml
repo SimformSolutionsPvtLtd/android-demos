@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">circular_reveal_effect</string>
+    <string name="album_title">Smoke + Mirrors</string>
+    <string name="artist_label">Artist</string>
+    <string name="artist">Imagine Dragons</string>
+    <string name="release_date">February 17, 2015</string>
+    <string name="genre">Pop rock, Rock, Alternative rock.</string>
+    <string name="genre_label">Genre</string>
+    <string name="release_date_label">Release Date</string>
+    <string name="song_name_1">I Bet My Life</string>
+    <string name="artist_name">Imagine Dragons</string>
+    <string name="song_name_2">Dream</string>
+    <string name="tracks_label">Tracks</string>
+    <string name="album_icon">Album Icon</string>
+    <string name="album_art">Album Art</string>
+    <string name="mask">mask</string>
+</resources>
