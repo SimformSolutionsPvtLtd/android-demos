@@ -1,235 +1,239 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".RevealEffectActivity">
-
-    <ImageView
-        android:id="@+id/ivAlbumArt"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/mask_black"
-        android:clickable="true"
-        android:contentDescription="@string/album_art"
-        android:focusable="true"
-        android:focusableInTouchMode="true"
-        android:onClick="showMoreInfo"
-        android:scaleType="centerCrop"
-        android:src="@drawable/album_art_big"
-        tools:visibility="visible" />
-
-    <TextView
-        android:id="@+id/tvTracksLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:text="@string/tracks_label"
-        android:textColor="@android:color/white"
-        android:textSize="@dimen/tracks_title_text_size"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/ivAlbumArtIcon1"
-        android:layout_width="@dimen/album_icon_width"
-        android:layout_height="@dimen/album_icon_height"
-        android:layout_marginStart="@dimen/album_icon_margin_start"
-        android:contentDescription="@string/album_icon"
-        android:src="@drawable/ic_album_black_24dp"
-        android:tint="@android:color/white"
-        app:layout_constraintBottom_toBottomOf="@+id/tvArtistName1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/tvSongName1" />
-
-    <TextView
-        android:id="@+id/tvSongName1"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="@dimen/song_name_margin_start"
-        android:layout_marginTop="16dp"
-        android:text="@string/song_name_1"
-        android:textColor="@android:color/white"
-        android:textSize="@dimen/song_name_text_size"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/tvArtistName1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/ivAlbumArtIcon1"
-        app:layout_constraintTop_toBottomOf="@+id/tvTracksLabel"
-        app:layout_constraintVertical_chainStyle="packed" />
-
-    <TextView
-        android:id="@+id/tvArtistName1"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="@dimen/artist_name_margin_start"
-        android:text="@string/artist_name"
-        android:textColor="@android:color/white"
-        android:textSize="@dimen/artist_name_text_size"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/ivAlbumArtIcon1"
-        app:layout_constraintTop_toBottomOf="@+id/tvSongName1" />
-
-    <ImageView
-        android:id="@+id/ivAlbumArtIcon2"
-        android:layout_width="@dimen/album_icon_width"
-        android:layout_height="@dimen/album_icon_height"
-        android:layout_marginStart="@dimen/album_icon_margin_start"
-        android:contentDescription="@string/album_icon"
-        android:src="@drawable/ic_album_black_24dp"
-        android:tint="@android:color/white"
-        app:layout_constraintBottom_toBottomOf="@+id/tvArtistName2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/tvSongName2" />
-
-    <TextView
-        android:id="@+id/tvSongName2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="@dimen/song_name_margin_start"
-        android:layout_marginTop="16dp"
-        android:text="@string/song_name_2"
-        android:textColor="@android:color/white"
-        android:textSize="@dimen/song_name_text_size"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/tvArtistName2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/ivAlbumArtIcon2"
-        app:layout_constraintTop_toBottomOf="@+id/tvArtistName1"
-        app:layout_constraintVertical_chainStyle="packed" />
-
-    <TextView
-        android:id="@+id/tvArtistName2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="@dimen/artist_name_margin_start"
-        android:text="@string/artist_name"
-        android:textColor="@android:color/white"
-        android:textSize="@dimen/artist_name_text_size"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/ivAlbumArtIcon2"
-        app:layout_constraintTop_toBottomOf="@+id/tvSongName2" />
+    xmlns:tools="http://schemas.android.com/tools">
 
     <android.support.constraint.ConstraintLayout
-        android:id="@+id/albumInfoContainer"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="@color/colorAccent"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="@id/ivAlbumArt"
-        app:layout_constraintEnd_toEndOf="@id/ivAlbumArt"
-        app:layout_constraintStart_toStartOf="@id/ivAlbumArt"
-        app:layout_constraintTop_toTopOf="@id/ivAlbumArt"
-        tools:visibility="gone">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".RevealEffectActivity">
+
+        <ImageView
+            android:id="@+id/ivAlbumArt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/mask_black"
+            android:clickable="true"
+            android:contentDescription="@string/album_art"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:onClick="showMoreInfo"
+            android:scaleType="centerCrop"
+            android:src="@drawable/album_art_big"
+            tools:visibility="visible" />
 
         <TextView
-            android:id="@+id/tvAlbumName"
+            android:id="@+id/tvTracksLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="16dp"
-            android:text="@string/album_title"
+            android:layout_marginStart="40dp"
+            android:text="@string/tracks_label"
             android:textColor="@android:color/white"
-            android:textSize="@dimen/details_title_text_size"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/tvArtistLabel"
+            android:textSize="@dimen/tracks_title_text_size"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivAlbumArtIcon1"
+            android:layout_width="@dimen/album_icon_width"
+            android:layout_height="@dimen/album_icon_height"
+            android:layout_marginStart="@dimen/album_icon_margin_start"
+            android:contentDescription="@string/album_icon"
+            android:src="@drawable/ic_album_black_24dp"
+            android:tint="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/tvArtistName1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvSongName1" />
+
+        <TextView
+            android:id="@+id/tvSongName1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="@dimen/song_name_margin_start"
+            android:layout_marginTop="16dp"
+            android:text="@string/song_name_1"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/song_name_text_size"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/tvArtistName1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivAlbumArtIcon1"
+            app:layout_constraintTop_toBottomOf="@+id/tvTracksLabel"
             app:layout_constraintVertical_chainStyle="packed" />
 
         <TextView
-            android:id="@+id/tvArtistLabel"
-            android:layout_width="wrap_content"
+            android:id="@+id/tvArtistName1"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/details_label_margin_start"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="@dimen/artist_name_margin_start"
+            android:text="@string/artist_name"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/artist_name_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ivAlbumArtIcon1"
+            app:layout_constraintTop_toBottomOf="@+id/tvSongName1" />
+
+        <ImageView
+            android:id="@+id/ivAlbumArtIcon2"
+            android:layout_width="@dimen/album_icon_width"
+            android:layout_height="@dimen/album_icon_height"
+            android:layout_marginStart="@dimen/album_icon_margin_start"
+            android:contentDescription="@string/album_icon"
+            android:src="@drawable/ic_album_black_24dp"
+            android:tint="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/tvArtistName2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvSongName2" />
+
+        <TextView
+            android:id="@+id/tvSongName2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="@dimen/song_name_margin_start"
             android:layout_marginTop="16dp"
-            android:text="@string/artist_label"
+            android:text="@string/song_name_2"
             android:textColor="@android:color/white"
-            android:textSize="@dimen/details_label_text_size"
-            app:layout_constraintBottom_toTopOf="@+id/tvArtist"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvAlbumName" />
-
-        <TextView
-            android:id="@+id/tvArtist"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/details_margin_start"
-            android:text="@string/artist"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/details_text_size"
+            android:textSize="@dimen/song_name_text_size"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/tvReleaseDateLabel"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvArtistLabel" />
+            app:layout_constraintBottom_toTopOf="@+id/tvArtistName2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivAlbumArtIcon2"
+            app:layout_constraintTop_toBottomOf="@+id/tvArtistName1"
+            app:layout_constraintVertical_chainStyle="packed" />
 
         <TextView
-            android:id="@+id/tvReleaseDateLabel"
-            android:layout_width="wrap_content"
+            android:id="@+id/tvArtistName2"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/details_label_margin_start"
-            android:layout_marginTop="16dp"
-            android:text="@string/release_date_label"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="@dimen/artist_name_margin_start"
+            android:text="@string/artist_name"
             android:textColor="@android:color/white"
-            android:textSize="@dimen/details_label_text_size"
-            app:layout_constraintBottom_toTopOf="@+id/tvReleaseDate"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvArtist" />
+            android:textSize="@dimen/artist_name_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ivAlbumArtIcon2"
+            app:layout_constraintTop_toBottomOf="@+id/tvSongName2" />
 
-        <TextView
-            android:id="@+id/tvReleaseDate"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/details_margin_start"
-            android:text="@string/release_date"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/details_text_size"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/tvGenreLabel"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvReleaseDateLabel" />
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/albumInfoContainer"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/colorAccent"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/ivAlbumArt"
+            app:layout_constraintEnd_toEndOf="@id/ivAlbumArt"
+            app:layout_constraintStart_toStartOf="@id/ivAlbumArt"
+            app:layout_constraintTop_toTopOf="@id/ivAlbumArt"
+            tools:visibility="gone">
 
-        <TextView
-            android:id="@+id/tvGenreLabel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/details_label_margin_start"
-            android:layout_marginTop="16dp"
-            android:text="@string/genre_label"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/details_label_text_size"
-            app:layout_constraintBottom_toTopOf="@+id/tvGenre"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvReleaseDate" />
+            <TextView
+                android:id="@+id/tvAlbumName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/album_title"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/details_title_text_size"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/tvArtistLabel"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed" />
 
-        <TextView
-            android:id="@+id/tvGenre"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:layout_marginStart="@dimen/details_margin_start"
-            android:text="@string/genre"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/details_text_size"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvGenreLabel" />
+            <TextView
+                android:id="@+id/tvArtistLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/details_label_margin_start"
+                android:layout_marginTop="16dp"
+                android:text="@string/artist_label"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/details_label_text_size"
+                app:layout_constraintBottom_toTopOf="@+id/tvArtist"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvAlbumName" />
 
-        <android.support.constraint.Group
-            android:id="@+id/textGroup"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:visibility="visible"
-            app:constraint_referenced_ids="tvGenreLabel,tvReleaseDateLabel,tvArtist,tvReleaseDate,tvGenre,tvAlbumName,tvArtistLabel" />
+            <TextView
+                android:id="@+id/tvArtist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/details_margin_start"
+                android:text="@string/artist"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/details_text_size"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/tvReleaseDateLabel"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvArtistLabel" />
+
+            <TextView
+                android:id="@+id/tvReleaseDateLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/details_label_margin_start"
+                android:layout_marginTop="16dp"
+                android:text="@string/release_date_label"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/details_label_text_size"
+                app:layout_constraintBottom_toTopOf="@+id/tvReleaseDate"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvArtist" />
+
+            <TextView
+                android:id="@+id/tvReleaseDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/details_margin_start"
+                android:text="@string/release_date"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/details_text_size"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/tvGenreLabel"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvReleaseDateLabel" />
+
+            <TextView
+                android:id="@+id/tvGenreLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/details_label_margin_start"
+                android:layout_marginTop="16dp"
+                android:text="@string/genre_label"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/details_label_text_size"
+                app:layout_constraintBottom_toTopOf="@+id/tvGenre"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvReleaseDate" />
+
+            <TextView
+                android:id="@+id/tvGenre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="@dimen/details_margin_start"
+                android:text="@string/genre"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/details_text_size"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvGenreLabel" />
+
+            <android.support.constraint.Group
+                android:id="@+id/textGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:constraint_referenced_ids="tvGenreLabel,tvReleaseDateLabel,tvArtist,tvReleaseDate,tvGenre,tvAlbumName,tvArtistLabel" />
+
+        </android.support.constraint.ConstraintLayout>
 
     </android.support.constraint.ConstraintLayout>
 
-</android.support.constraint.ConstraintLayout>
+</layout>
