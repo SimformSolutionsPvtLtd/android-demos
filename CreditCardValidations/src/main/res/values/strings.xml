@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Credit Card Validation Demo</string>
+    <string name="card_number">Card Number</string>
+    <string name="month">Month</string>
+    <string name="hint_mm">MM</string>
+    <string name="year">Year</string>
+    <string name="hint_yy">YY</string>
+    <string name="cvv">CVV</string>
+    <string name="hint_cvv">CVV</string>
+    <string name="save">Save</string>
+    <string name="xxxx_xxxx_xxxx_xxxx">XXXX XXXX XXXX XXXX</string>
+</resources>

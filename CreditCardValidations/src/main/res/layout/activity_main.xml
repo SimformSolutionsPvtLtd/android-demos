@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_card_number_title"
+        style="@style/RobotoLightTextView"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/card_number"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16.5sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_card_number"
+        style="@style/RobotoEditTextLight"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:digits=" 0123456789"
+        android:inputType="phone"
+        android:padding="10dp"
+        android:hint="@string/xxxx_xxxx_xxxx_xxxx"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_card_number_title" />
+
+    <TextView
+        android:id="@+id/tv_month_title"
+        style="@style/RobotoLightTextView"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/month"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16.5sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_card_number" />
+
+    <EditText
+        android:id="@+id/et_month"
+        style="@style/RobotoEditTextLight"
+        android:layout_width="0dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:hint="@string/hint_mm"
+        android:inputType="number"
+        android:maxLength="2"
+        android:padding="10dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12.5sp"
+        app:layout_constraintEnd_toStartOf="@+id/et_year"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_month_title" />
+
+    <TextView
+        android:id="@+id/tv_year_title"
+        style="@style/RobotoLightTextView"
+        android:layout_marginTop="15dp"
+        android:text="@string/year"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16.5sp"
+        app:layout_constraintStart_toStartOf="@+id/et_year"
+        app:layout_constraintTop_toBottomOf="@+id/et_card_number" />
+
+    <EditText
+        android:id="@+id/et_year"
+        style="@style/RobotoEditTextLight"
+        android:layout_width="0dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:hint="@string/hint_yy"
+        android:inputType="number"
+        android:maxLength="2"
+        android:padding="10dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12.5sp"
+        app:layout_constraintEnd_toStartOf="@+id/et_cvv"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/et_month"
+        app:layout_constraintTop_toBottomOf="@+id/tv_year_title" />
+
+    <TextView
+        android:id="@+id/tv_cvv_title"
+        style="@style/RobotoLightTextView"
+        android:layout_marginTop="15dp"
+        android:text="@string/cvv"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16.5sp"
+        app:layout_constraintStart_toStartOf="@+id/et_cvv"
+        app:layout_constraintTop_toBottomOf="@+id/et_card_number" />
+
+    <EditText
+        android:id="@+id/et_cvv"
+        style="@style/RobotoEditTextLight"
+        android:layout_width="0dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:hint="@string/hint_cvv"
+        android:inputType="numberPassword"
+        android:maxLength="4"
+        android:padding="10dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12.5sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/et_year"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cvv_title" />
+
+    <TextView
+        android:id="@+id/tv_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        android:padding="10dp"
+        android:text="@string/save"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_month" />
+
+    <ProgressBar
+        android:id="@+id/pb"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/tv_save"
+        app:layout_constraintStart_toStartOf="@+id/tv_save"
+        app:layout_constraintTop_toBottomOf="@+id/tv_save" />
+</android.support.constraint.ConstraintLayout>
