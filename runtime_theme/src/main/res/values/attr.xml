@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="txtColorDark" format="reference|color" />
+    <attr name="txtColorLight" format="reference|color" />
+    <attr name="cardColor" format="reference|color" />
+    <attr name="bgColor" format="reference|color" />
+</resources>

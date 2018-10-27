@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Runtime Theme Demo</string>
+    <string name="login">Login</string>
+    <string name="register_now">" Register now"</string>
+    <string name="not_member_yet">Not remember yet?</string>
+    <string name="title_login">Login</string>
+    <string name="forgot_password_link">Forgot password?</string>
+    <string name="hint_enter_password">Enter password</string>
+    <string name="title_password">Password</string>
+    <string name="hint_email">Enter email</string>
+    <string name="title_email">Email</string>
+    <string name="off">Dark</string>
+    <string name="on">Light</string>
+    <string name="change_theme_to">"Change theme to "</string>
+</resources>
