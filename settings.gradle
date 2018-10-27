@@ -1,1 +1,1 @@
-include ':app', ':constraintlayout', ':circular_reveal_effect', ":CreditCardValidations"
+include ':app', ':constraintlayout', ':circular_reveal_effect', ":CreditCardValidations", ':runtime_theme'
